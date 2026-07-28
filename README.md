@@ -1,10 +1,10 @@
 <div align="center">
 
-<!-- Hero Banner Auto Theme Switcher (Dark & Light) -->
+<!-- Hero Banner Auto Theme Switcher with GitHub Raw URLs -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="light.svg" />
-  <img alt="Pradhyut — Ultimate AI Agents & Systems Architect" src="dark.svg" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Pradhyut21/Pradhyut21/main/dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Pradhyut21/Pradhyut21/main/light.svg" />
+  <img alt="Pradhyut — Ultimate AI Agents & Systems Architect" src="https://raw.githubusercontent.com/Pradhyut21/Pradhyut21/main/dark.svg" width="100%" />
 </picture>
 
 <br/><br/>
@@ -20,7 +20,7 @@
 
 ---
 
-## 🫡 TL;DR
+## ⚡ Quick Overview
 
 > Building **autonomous AI agents**, multi-agent swarms, LLM orchestration frameworks, and high-performance full-stack web platforms. Focused on pushing the boundaries of self-reasoning AI systems.
 
