@@ -1,10 +1,7 @@
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/banner-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/banner-light.svg">
-  <img alt="Pradhyut — Autonomous AI Agent Architect" src="./assets/banner-dark.svg" width="100%">
-</picture>
+![Pradhyut — Autonomous AI Agent Architect](assets/banner-dark.svg#gh-dark-mode-only)
+![Pradhyut — Autonomous AI Agent Architect](assets/banner-light.svg#gh-light-mode-only)
 
 <br/>
 
@@ -121,20 +118,6 @@ Bilingual English/Kannada crime analytics platform — KSP Datathon 2026. Real-t
 </td>
 </tr>
 </table>
-
-<br>
-
-## 🏆 hackathon_grindset
-
-| Event | Build | Focus |
-|---|---|---|
-| Zero to One AI Hackathon (Pocket FM) | KATHA-LOOP | Generative serialized fiction |
-| FIFA World Cup 2026 GenAI Challenge | CrowdPulse AI | Smart stadium experience |
-| NABARD Hackathon @ Global Fintech Fest | KisanPulse | Rural fintech & cash-flow prediction |
-| IDBI Innovate 2026 | FINLENS | Behavioral intent & income intelligence |
-| KSP Datathon 2026 | ANVESHA | Bilingual crime analytics |
-| Bharatiya Antariksh Hackathon | — | Cross-modal satellite image retrieval |
-| Goldman Sachs Hackathon | — | Competitive programming (C++) |
 
 <br>
 
