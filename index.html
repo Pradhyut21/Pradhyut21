@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitHub Profile README Hero Banners Preview</title>
+  <style>
+    :root {
+      --bg-dark: #090d16;
+      --bg-light: #f3f4f6;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-dark);
+      color: #f8fafc;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1240px;
+      width: 100%;
+    }
+
+    header {
+      margin-bottom: 36px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 800;
+      background: linear-gradient(135deg, #7c3aed, #22d3ee, #10b981);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 8px;
+    }
+
+    p.subtitle {
+      color: #94a3b8;
+      font-size: 16px;
+    }
+
+    .section-card {
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 40px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+      backdrop-filter: blur(12px);
+    }
+
+    .section-card.light-card {
+      background: rgba(255, 255, 255, 0.95);
+      border: 1px solid rgba(15, 23, 42, 0.1);
+      color: #0f172a;
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
+
+    .badge-dark {
+      background: rgba(124, 58, 237, 0.2);
+      color: #a78bfa;
+      border: 1px solid rgba(124, 58, 237, 0.4);
+    }
+
+    .badge-light {
+      background: rgba(37, 99, 235, 0.1);
+      color: #2563eb;
+      border: 1px solid rgba(37, 99, 235, 0.3);
+    }
+
+    .banner-wrapper {
+      width: 100%;
+      overflow: hidden;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    img.banner-img {
+      width: 100%;
+      max-width: 1180px;
+      height: auto;
+      display: block;
+      border-radius: 20px;
+    }
+
+    .markdown-snippet {
+      margin-top: 24px;
+      background: #030712;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 16px;
+      font-family: 'Fira Code', Consolas, monospace;
+      font-size: 13px;
+      color: #38bdf8;
+      overflow-x: auto;
+      white-space: pre-wrap;
+    }
+
+    .markdown-snippet.light-code {
+      background: #f8fafc;
+      border: 1px solid rgba(15, 23, 42, 0.1);
+      color: #0284c7;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Premium GitHub Profile README Hero Banners</h1>
+      <p class="subtitle">Pure SVG • SMIL Animations • Dark & Light Themes • Pixel-Perfect Design</p>
+    </header>
+
+    <!-- DARK MODE PREVIEW -->
+    <div class="section-card">
+      <div class="card-header">
+        <span class="badge badge-dark">Dark Theme (dark.svg)</span>
+        <span style="color: #94a3b8; font-size: 13px;">1180 × 610 px</span>
+      </div>
+      <div class="banner-wrapper">
+        <img class="banner-img" src="dark.svg" alt="Dark Mode Hero Banner" />
+      </div>
+      <div class="markdown-snippet">
+&lt;!-- GitHub Dark Mode Embed Code --&gt;
+&lt;img src="dark.svg" width="100%" alt="Developer Profile Hero Banner" /&gt;
+      </div>
+    </div>
+
+    <!-- LIGHT MODE PREVIEW -->
+    <div class="section-card light-card">
+      <div class="card-header">
+        <span class="badge badge-light">Light Theme (light.svg)</span>
+        <span style="color: #475569; font-size: 13px;">1180 × 610 px</span>
+      </div>
+      <div class="banner-wrapper">
+        <img class="banner-img" src="light.svg" alt="Light Mode Hero Banner" />
+      </div>
+      <div class="markdown-snippet light-code">
+&lt;!-- GitHub Light Mode Embed Code --&gt;
+&lt;img src="light.svg" width="100%" alt="Developer Profile Hero Banner" /&gt;
+      </div>
+    </div>
+
+    <!-- AUTOMATIC THEME SWITCHING EMBED -->
+    <div class="section-card">
+      <div class="card-header">
+        <span class="badge badge-dark" style="background: rgba(16, 185, 129, 0.2); color: #34d399; border-color: rgba(16, 185, 129, 0.4);">
+          Auto Theme Switching (GitHub Picture Embed)
+        </span>
+      </div>
+      <div class="markdown-snippet">
+&lt;!-- Responsive GitHub README Theme Switcher (Dark &amp; Light) --&gt;
+&lt;picture&gt;
+  &lt;source media="(prefers-color-scheme: dark)" srcset="dark.svg" /&gt;
+  &lt;source media="(prefers-color-scheme: light)" srcset="light.svg" /&gt;
+  &lt;img alt="Developer Profile Banner" src="dark.svg" width="100%" /&gt;
+&lt;/picture&gt;
+      </div>
+    </div>
+  </div>
+</body>
+</html>
