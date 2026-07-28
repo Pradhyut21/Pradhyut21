@@ -1,11 +1,7 @@
 <div align="center">
 
-<!-- Hero Banner Auto Theme Switcher with GitHub Raw URLs -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Pradhyut21/Pradhyut21/main/dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Pradhyut21/Pradhyut21/main/light.svg" />
-  <img alt="Pradhyut — Ultimate AI Agents & Systems Architect" src="https://raw.githubusercontent.com/Pradhyut21/Pradhyut21/main/dark.svg" width="100%" />
-</picture>
+<!-- Hero Banner (Standard GitHub Markdown Image Syntax) -->
+![Pradhyut — Ultimate AI Agents & Systems Architect](dark.svg)
 
 <br/><br/>
 
