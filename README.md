@@ -1,7 +1,10 @@
 <div align="center">
 
-![Pradhyut — Autonomous AI Agent Architect](assets/banner-dark.svg#gh-dark-mode-only)
-![Pradhyut — Autonomous AI Agent Architect](assets/banner-light.svg#gh-light-mode-only)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
+  <img alt="Pradhyut — Autonomous AI Agent Architect" src="assets/banner-dark.svg" width="100%">
+</picture>
 
 <br/>
 
