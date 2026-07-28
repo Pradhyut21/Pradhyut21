@@ -2,25 +2,78 @@
   <defs>
     <!-- Fonts & Keyframes CSS styling for crisp rendering -->
     <style>
-      @keyframes floatSlow {
-        0%, 100% { transform: translateY(0px); }
-        50% { transform: translateY(-6px); }
-      }
-      @keyframes pulseGlow {
-        0%, 100% { opacity: 0.4; }
-        50% { opacity: 0.8; }
-      }
-      @keyframes shimmerBorder {
-        0% { stop-color: #7C3AED; }
-        33% { stop-color: #22D3EE; }
-        66% { stop-color: #10B981; }
-        100% { stop-color: #7C3AED; }
-      }
       .mono-text {
         font-family: 'Fira Code', 'JetBrains Mono', 'SF Mono', Consolas, 'Courier New', monospace;
       }
       .sans-text {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      }
+      .panel-float {
+        animation: floatSlow 6s ease-in-out infinite;
+      }
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-5px); }
+      }
+      .pulse-dot {
+        animation: pulseGlow 2s ease-in-out infinite;
+      }
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.4; }
+      }
+      .orb-1 { animation: orbFloat1 12s ease-in-out infinite; }
+      @keyframes orbFloat1 {
+        0%, 100% { transform: translate(0px, 0px); }
+        50% { transform: translate(40px, 30px); }
+      }
+      .orb-2 { animation: orbFloat2 15s ease-in-out infinite; }
+      @keyframes orbFloat2 {
+        0%, 100% { transform: translate(0px, 0px); }
+        50% { transform: translate(-50px, -40px); }
+      }
+      .orb-3 { animation: orbFloat3 18s ease-in-out infinite; }
+      @keyframes orbFloat3 {
+        0%, 100% { transform: translate(0px, 0px); }
+        50% { transform: translate(30px, -20px); }
+      }
+      .scanline {
+        animation: scanAnim 4s linear infinite;
+      }
+      @keyframes scanAnim {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(480px); }
+        100% { transform: translateY(0px); }
+      }
+      .cursor-blink {
+        animation: blink 0.8s step-end infinite;
+      }
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+      .role-1 { animation: roleCycle1 12s infinite; }
+      .role-2 { animation: roleCycle2 12s infinite; }
+      .role-3 { animation: roleCycle3 12s infinite; }
+      .role-4 { animation: roleCycle4 12s infinite; }
+      @keyframes roleCycle1 {
+        0%, 22% { opacity: 1; }
+        25%, 100% { opacity: 0; }
+      }
+      @keyframes roleCycle2 {
+        0%, 22% { opacity: 0; }
+        25%, 47% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+      @keyframes roleCycle3 {
+        0%, 47% { opacity: 0; }
+        50%, 72% { opacity: 1; }
+        75%, 100% { opacity: 0; }
+      }
+      @keyframes roleCycle4 {
+        0%, 72% { opacity: 0; }
+        75%, 97% { opacity: 1; }
+        100% { opacity: 0; }
       }
     </style>
 
@@ -40,38 +93,24 @@
       <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#000000" flood-opacity="0.6"/>
     </filter>
 
-    <!-- Animated Accent Gradients -->
+    <!-- Accent Gradients -->
     <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#7C3AED">
-        <animate attributeName="stop-color" values="#7C3AED;#22D3EE;#10B981;#7C3AED" dur="8s" repeatCount="indefinite" />
-      </stop>
-      <stop offset="50%" stop-color="#22D3EE">
-        <animate attributeName="stop-color" values="#22D3EE;#10B981;#7C3AED;#22D3EE" dur="8s" repeatCount="indefinite" />
-      </stop>
-      <stop offset="100%" stop-color="#10B981">
-        <animate attributeName="stop-color" values="#10B981;#7C3AED;#22D3EE;#10B981" dur="8s" repeatCount="indefinite" />
-      </stop>
+      <stop offset="0%" stop-color="#7C3AED" />
+      <stop offset="50%" stop-color="#22D3EE" />
+      <stop offset="100%" stop-color="#10B981" />
     </linearGradient>
 
-    <!-- ASCII Gradient Shimmer -->
+    <!-- ASCII Gradient -->
     <linearGradient id="ascii-grad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#22D3EE">
-        <animate attributeName="stop-color" values="#22D3EE;#7C3AED;#38BDF8;#22D3EE" dur="6s" repeatCount="indefinite" />
-      </stop>
-      <stop offset="100%" stop-color="#A855F7">
-        <animate attributeName="stop-color" values="#A855F7;#10B981;#818CF8;#A855F7" dur="6s" repeatCount="indefinite" />
-      </stop>
+      <stop offset="0%" stop-color="#22D3EE" />
+      <stop offset="100%" stop-color="#A855F7" />
     </linearGradient>
 
-    <!-- Shimmering Border Gradient -->
+    <!-- Border Gradient -->
     <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.8">
-        <animate attributeName="stop-color" values="#7C3AED;#22D3EE;#10B981;#7C3AED" dur="10s" repeatCount="indefinite" />
-      </stop>
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.8" />
       <stop offset="50%" stop-color="#ffffff" stop-opacity="0.1" />
-      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0.8">
-        <animate attributeName="stop-color" values="#22D3EE;#10B981;#7C3AED;#22D3EE" dur="10s" repeatCount="indefinite" />
-      </stop>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0.8" />
     </linearGradient>
 
     <!-- Background Radial Orbs -->
@@ -112,19 +151,6 @@
     <pattern id="grid-pattern" width="30" height="30" patternUnits="userSpaceOnUse">
       <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#ffffff" stroke-opacity="0.025" stroke-width="1" />
     </pattern>
-
-    <!-- Clip Paths for Sequential Reveal Animations -->
-    <clipPath id="ascii-reveal">
-      <rect x="30" y="30" width="410" height="0">
-        <animate attributeName="height" values="0;550" dur="1.8s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" />
-      </rect>
-    </clipPath>
-
-    <clipPath id="term-line1">
-      <rect x="0" y="0" width="0" height="40">
-        <animate attributeName="width" values="0;450" begin="0.3s" dur="1.0s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" />
-      </rect>
-    </clipPath>
   </defs>
 
   <!-- ================= BACKGROUND LAYER ================= -->
@@ -136,39 +162,18 @@
 
   <!-- Dynamic Ambient Glowing Orbs -->
   <g opacity="0.8">
-    <circle cx="150" cy="120" r="280" fill="url(#orb-purple)">
-      <animateTransform attributeName="transform" type="translate" values="0,0; 40,30; 0,0" dur="12s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="1000" cy="480" r="320" fill="url(#orb-cyan)">
-      <animateTransform attributeName="transform" type="translate" values="0,0; -50,-40; 0,0" dur="15s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="600" cy="300" r="250" fill="url(#orb-emerald)">
-      <animateTransform attributeName="transform" type="translate" values="0,0; 30,-20; 0,0" dur="18s" repeatCount="indefinite" />
-    </circle>
+    <circle class="orb-1" cx="150" cy="120" r="280" fill="url(#orb-purple)" />
+    <circle class="orb-2" cx="1000" cy="480" r="320" fill="url(#orb-cyan)" />
+    <circle class="orb-3" cx="600" cy="300" r="250" fill="url(#orb-emerald)" />
   </g>
 
   <!-- Animated Ambient Floating Particles -->
   <g fill="#22D3EE" opacity="0.6">
-    <circle cx="120" cy="480" r="1.5">
-      <animate attributeName="cy" values="480;420;480" dur="6s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="6s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="380" cy="140" r="2">
-      <animate attributeName="cy" values="140;90;140" dur="8s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0.3;0.9;0.3" dur="8s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="750" cy="520" r="1.2">
-      <animate attributeName="cy" values="520;460;520" dur="7s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0.1;0.7;0.1" dur="7s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="1100" cy="180" r="2.5">
-      <animate attributeName="cy" values="180;120;180" dur="9s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0.4;1;0.4" dur="9s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="520" cy="80" r="1.8">
-      <animate attributeName="cy" values="80;40;80" dur="10s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0.2;0.6;0.2" dur="10s" repeatCount="indefinite" />
-    </circle>
+    <circle cx="120" cy="480" r="1.5" />
+    <circle cx="380" cy="140" r="2" />
+    <circle cx="750" cy="520" r="1.2" />
+    <circle cx="1100" cy="180" r="2.5" />
+    <circle cx="520" cy="80" r="1.8" />
   </g>
 
   <!-- Outer Canvas Border Shimmer -->
@@ -177,9 +182,7 @@
   <!-- ================= LEFT PANEL (ASCII ART & CYBER PORTRAIT) ================= -->
   <g transform="translate(30, 30)">
     <!-- Floating Wrapper for Left Side -->
-    <g>
-      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-5; 0,0" dur="6s" repeatCount="indefinite" />
-      
+    <g class="panel-float">
       <!-- Panel Background & Glassmorphism -->
       <rect width="410" height="550" rx="16" fill="#0F172A" fill-opacity="0.65" stroke="rgba(255,255,255,0.1)" stroke-width="1" filter="url(#panel-shadow)" />
       <rect width="410" height="550" rx="16" fill="url(#glass-glare)" />
@@ -190,9 +193,7 @@
       
       <!-- Status Badge & Cyber Title -->
       <circle cx="24" cy="21" r="4" fill="#10B981" filter="url(#glow-cyan)" />
-      <circle cx="24" cy="21" r="4" fill="#10B981">
-        <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite" />
-      </circle>
+      <circle class="pulse-dot" cx="24" cy="21" r="4" fill="#10B981" />
       <text x="38" y="25" class="mono-text" font-size="11" font-weight="600" fill="#94A3B8" letter-spacing="1">SYSTEM.ASCII // PORTRAIT_V3</text>
       
       <!-- Corner Decorative Brackets -->
@@ -201,8 +202,8 @@
       <path d="M 12 534 L 12 542 L 20 542" fill="none" stroke="#22D3EE" stroke-width="1.5" opacity="0.6" />
       <path d="M 398 534 L 398 542 L 390 542" fill="none" stroke="#22D3EE" stroke-width="1.5" opacity="0.6" />
 
-      <!-- Animated ASCII Portrait Content with Reveal Mask -->
-      <g clip-path="url(#ascii-reveal)">
+      <!-- ASCII Portrait Content -->
+      <g>
         <!-- Cyber ASCII Character Art -->
         <text class="mono-text" font-size="9.2" font-weight="700" fill="url(#ascii-grad)" letter-spacing="1.2" xml:space="preserve" filter="url(#glow-purple)">
           <tspan x="20" y="70">@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</tspan>
@@ -235,16 +236,14 @@
       </g>
 
       <!-- Moving Scanline Effect -->
-      <rect x="1" y="43" width="408" height="20" fill="url(#scanline-grad)" opacity="0.7">
-        <animate attributeName="y" values="43;525;43" dur="4s" repeatCount="indefinite" />
-      </rect>
+      <rect class="scanline" x="1" y="43" width="408" height="20" fill="url(#scanline-grad)" opacity="0.7" />
 
       <!-- Bottom Status Bar -->
       <line x1="20" y1="490" x2="390" y2="490" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
       <g transform="translate(20, 518)">
         <text class="mono-text" font-size="11" fill="#94A3B8">STATUS: <tspan fill="#10B981" font-weight="700">ACTIVE</tspan></text>
         <text x="210" y="0" class="mono-text" font-size="11" fill="#94A3B8">FPS: <tspan fill="#22D3EE">60.0</tspan></text>
-        <text x="300" y="0" class="mono-text" font-size="11" fill="#7C3AED">64%</tspan></text>
+        <text x="300" y="0" class="mono-text" font-size="11" fill="#94A3B8">MEM: <tspan fill="#7C3AED">64%</tspan></text>
       </g>
     </g>
   </g>
@@ -279,52 +278,41 @@
         <text class="mono-text" font-size="14" font-weight="600" fill="#22D3EE">❯ <tspan fill="#F8FAFC">whoami</tspan></text>
       </g>
 
-      <!-- Line 2: Main Name Greeting with Sequential Fade In -->
+      <!-- Line 2: Main Name Greeting -->
       <g transform="translate(0, 35)">
         <text class="sans-text" font-size="34" font-weight="800" fill="#F8FAFC" letter-spacing="-0.5">
           Hi <tspan font-size="30">👋</tspan> I'm <tspan fill="url(#accent-grad)">Pradhyut</tspan>
-          <animate attributeName="opacity" values="0;1" begin="0.2s" dur="0.8s" fill="freeze" />
         </text>
       </g>
 
       <!-- Line 3: Animated Typing Roles Focus on AI Agents -->
       <g transform="translate(0, 75)">
         <text class="mono-text" font-size="18" font-weight="600" fill="#94A3B8">
-          Role: <tspan fill="#38BDF8">
-            <!-- Typing Text Switcher via SMIL animate -->
-            <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.22;0.25;0.97;1" dur="12s" repeatCount="indefinite" />
-            <animate attributeName="font-size" values="18" dur="12s" repeatCount="indefinite" />
-          </tspan>
+          Role:
         </text>
         
         <!-- Multi-role Text Cycle overlay -->
         <g transform="translate(68, 0)">
           <!-- Phrase 1: Autonomous AI Agent Architect -->
-          <text class="mono-text" font-size="17" font-weight="700" fill="#38BDF8" opacity="0">
+          <text class="mono-text role-1" font-size="17" font-weight="700" fill="#38BDF8" opacity="0">
             Autonomous AI Agent Architect
-            <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.22;0.25" dur="12s" repeatCount="indefinite" />
           </text>
           <!-- Phrase 2: Multi-Agent Swarm Engineer -->
-          <text class="mono-text" font-size="17" font-weight="700" fill="#10B981" opacity="0">
+          <text class="mono-text role-2" font-size="17" font-weight="700" fill="#10B981" opacity="0">
             Multi-Agent Swarm Engineer
-            <animate attributeName="opacity" values="0;1;1;0" keyTimes="0.25;0.30;0.47;0.50" dur="12s" repeatCount="indefinite" />
           </text>
           <!-- Phrase 3: Full-Stack AI Systems -->
-          <text class="mono-text" font-size="17" font-weight="700" fill="#A855F7" opacity="0">
+          <text class="mono-text role-3" font-size="17" font-weight="700" fill="#A855F7" opacity="0">
             Full-Stack AI Systems
-            <animate attributeName="opacity" values="0;1;1;0" keyTimes="0.50;0.55;0.72;0.75" dur="12s" repeatCount="indefinite" />
           </text>
           <!-- Phrase 4: Solo AI Product Builder -->
-          <text class="mono-text" font-size="17" font-weight="700" fill="#F59E0B" opacity="0">
+          <text class="mono-text role-4" font-size="17" font-weight="700" fill="#F59E0B" opacity="0">
             Solo AI Product Builder
-            <animate attributeName="opacity" values="0;1;1;0" keyTimes="0.75;0.80;0.97;1" dur="12s" repeatCount="indefinite" />
           </text>
         </g>
 
         <!-- Blinking Terminal Cursor -->
-        <rect x="345" y="-15" width="9" height="20" fill="#22D3EE" rx="1">
-          <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite" />
-        </rect>
+        <rect class="cursor-blink" x="345" y="-15" width="9" height="20" fill="#22D3EE" rx="1" />
       </g>
 
       <!-- Horizontal Divider -->
@@ -333,22 +321,19 @@
       <!-- Section 2: Personal Details Grid -->
       <g transform="translate(0, 125)" class="sans-text">
         <!-- Item 1: Current Focus -->
-        <g opacity="0">
-          <animate attributeName="opacity" values="0;1" begin="0.5s" dur="0.6s" fill="freeze" />
+        <g>
           <text x="0" y="2" font-size="13" font-weight="600" fill="#94A3B8">⚡ Current Focus:</text>
           <text x="120" y="2" font-size="13" font-weight="600" fill="#22D3EE">Ultimate Autonomous AI Agents &amp; Swarms</text>
         </g>
 
         <!-- Item 2: Portfolio -->
-        <g transform="translate(0, 32)" opacity="0">
-          <animate attributeName="opacity" values="0;1" begin="0.7s" dur="0.6s" fill="freeze" />
+        <g transform="translate(0, 32)">
           <text x="0" y="4" font-size="13" font-weight="600" fill="#94A3B8">🌐 Portfolio:</text>
           <text x="120" y="4" font-size="13" font-weight="500" fill="#F8FAFC">pang-ai.vercel.app</text>
         </g>
 
         <!-- Item 3: Email -->
-        <g transform="translate(290, 32)" opacity="0">
-          <animate attributeName="opacity" values="0;1" begin="0.8s" dur="0.6s" fill="freeze" />
+        <g transform="translate(290, 32)">
           <text x="0" y="4" font-size="13" font-weight="600" fill="#94A3B8">✉️ Email:</text>
           <text x="70" y="4" font-size="13" font-weight="500" fill="#10B981">pradhyut2007@gmail.com</text>
         </g>
@@ -371,7 +356,7 @@
             <text x="28" y="18" font-size="11" font-weight="600" fill="#F8FAFC">AI Agents</text>
           </g>
 
-          <!-- Pill: LangChain -->
+          <!-- Pill: LangGraph -->
           <g transform="translate(104, 0)" filter="url(#pill-shadow)">
             <rect width="96" height="28" rx="14" fill="url(#pill-bg)" stroke="#22D3EE" stroke-opacity="0.5" stroke-width="1" />
             <circle cx="16" cy="14" r="4" fill="#22D3EE" />
@@ -477,7 +462,7 @@
           <!-- X / Twitter Social Button -->
           <g transform="translate(284, 0)">
             <rect width="120" height="34" rx="8" fill="#1E293B" fill-opacity="0.8" stroke="rgba(255,255,255,0.12)" stroke-width="1" />
-            <path d="M 14 12 L 20.5 20.7 L 13.5 29 H 15 L 21.2 21.6 L 26 29 H 30.5 L 23.6 19.8 L 30 12 H 28.5 L 22.8 18.8 L 18.5 12 H 14 Z M 16.2 13.2 H 18.5 L 28.3 27.8 H 26 L 16.2 13.2 Z" fill="#38BDF8" />
+            <path d="M 14 12 L 20.5 20.7 L 13.5 29 H 15 L 21.2 21.6 L 26 29 H 30.5 L 23.6 19.8 L 30 12 H 28.5 L 22.8 18.8 L 18.5 L 12 H 14 Z M 16.2 13.2 H 18.5 L 28.3 27.8 H 26 L 16.2 13.2 Z" fill="#38BDF8" />
             <text x="42" y="22" class="sans-text" font-size="12" font-weight="600" fill="#F8FAFC">Twitter</text>
           </g>
 
