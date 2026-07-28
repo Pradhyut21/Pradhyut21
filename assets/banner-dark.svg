@@ -326,14 +326,8 @@
           <text x="120" y="2" font-size="13" font-weight="600" fill="#22D3EE">Ultimate Autonomous AI Agents &amp; Swarms</text>
         </g>
 
-        <!-- Item 2: Portfolio -->
+        <!-- Item 2: Email -->
         <g transform="translate(0, 32)">
-          <text x="0" y="4" font-size="13" font-weight="600" fill="#94A3B8">🌐 Portfolio:</text>
-          <text x="120" y="4" font-size="13" font-weight="500" fill="#F8FAFC">pang-ai.vercel.app</text>
-        </g>
-
-        <!-- Item 3: Email -->
-        <g transform="translate(290, 32)">
           <text x="0" y="4" font-size="13" font-weight="600" fill="#94A3B8">✉️ Email:</text>
           <text x="70" y="4" font-size="13" font-weight="500" fill="#10B981">pradhyut2007@gmail.com</text>
         </g>
@@ -448,7 +442,7 @@
           <!-- GitHub Social Button -->
           <g transform="translate(0, 0)">
             <rect width="130" height="34" rx="8" fill="#1E293B" fill-opacity="0.8" stroke="rgba(255,255,255,0.12)" stroke-width="1" />
-            <path d="M 22 10 C 15.37 10 10 15.37 10 22 C 10 27.3 13.44 31.8 18.2 33.38 C 18.8 33.49 19 33.12 19 32.8 C 19 32.52 18.99 31.65 18.98 30.64 C 15.65 31.37 14.95 29.3 14.95 29.3 C 14.4 27.92 13.62 27.55 13.62 27.55 C 12.53 26.81 13.7 26.83 13.7 26.83 C 14.9 26.91 15.53 28.06 15.53 28.06 C 16.6 29.89 18.33 29.36 19 29.05 C 19.11 28.27 19.42 27.74 19.77 27.44 C 17.11 27.14 14.32 26.11 14.32 21.52 C 14.32 20.21 14.78 19.14 15.54 18.3 C 15.42 18 15.01 16.78 15.66 15.13 C 15.66 15.13 16.66 14.81 18.95 16.36 C 19.9 16.1 20.92 15.97 21.94 15.96 C 22.96 15.97 23.98 16.1 24.93 16.36 C 27.22 14.81 28.21 15.13 28.21 15.13 C 28.87 16.78 28.46 18 28.34 18.3 C 29.1 19.14 29.56 20.21 29.56 21.52 C 29.56 26.12 26.76 27.13 24.09 27.43 C 24.52 27.8 24.9 28.53 24.9 29.66 C 24.9 31.27 24.89 32.57 24.89 32.8 C 24.89 33.12 25.09 33.5 25.7 33.38 C 30.46 31.8 33.9 27.3 33.9 22 C 33.9 15.37 28.53 10 22 10 Z" fill="#F8FAFC" />
+            <path d="M 22 10 C 15.37 10 10 15.37 10 22 C 10 27.3 13.44 31.8 18.2 33.38 C 18.8 33.49 19 33.12 19 32.8 C 19 32.52 18.99 31.65 18.98 30.64 C 15.65 31.37 14.95 29.3 14.95 29.3 C 14.4 27.92 13.62 27.55 13.62 27.55 C 12.53 26.81 13.7 26.83 13.7 26.83 C 14.9 26.91 15.53 28.06 15.53 28.06 C 16.6 29.89 18.33 29.36 19 29.05 C 19.11 28.27 19.42 27.74 19.77 27.44 C 17.11 27.14 14.32 26.11 14.32 21.52 C 14.32 20.21 14.78 19.14 15.54 18.3 C 15.42 18 15.01 16.78 15.66 15.13 C 15.66 15.13 16.66 14.81 18.95 16.36 C 19.9 16.1 20.92 15.97 21.94 15.96 C 22.96 15.97 23.98 16.1 24.93 16.36 C 27.22 14.81 28.21 15.13 28.21 15.13 C 28.87 16.78 28.46 18 28.34 18.3 C 29.1 19.14 29.56 20.21 29.56 21.52 C 29.56 26.12 26.76 27.13 24.09 27.43 C 24.52 27.8 24.9 28.53 24.9 29.66 C 24.9 31.27 25.09 33.5 25.7 33.38 C 30.46 31.8 33.9 27.3 33.9 22 C 33.9 15.37 28.53 10 22 10 Z" fill="#F8FAFC" />
             <text x="44" y="22" class="sans-text" font-size="12" font-weight="600" fill="#F8FAFC">GitHub</text>
           </g>
 
@@ -462,18 +456,10 @@
           <!-- X / Twitter Social Button -->
           <g transform="translate(284, 0)">
             <rect width="120" height="34" rx="8" fill="#1E293B" fill-opacity="0.8" stroke="rgba(255,255,255,0.12)" stroke-width="1" />
-            <path d="M 14 12 L 20.5 20.7 L 13.5 29 H 15 L 21.2 21.6 L 26 29 H 30.5 L 23.6 19.8 L 30 12 H 28.5 L 22.8 18.8 L 18.5 L 12 H 14 Z M 16.2 13.2 H 18.5 L 28.3 27.8 H 26 L 16.2 13.2 Z" fill="#38BDF8" />
+            <path d="M 14 12 L 20.5 20.7 L 13.5 29 H 15 L 21.2 21.6 L 26 29 H 30.5 L 23.6 19.8 L 30 12 H 28.5 L 22.8 18.8 L 18.5 12 H 14 Z M 16.2 13.2 H 18.5 L 28.3 27.8 H 26 L 16.2 13.2 Z" fill="#38BDF8" />
             <text x="42" y="22" class="sans-text" font-size="12" font-weight="600" fill="#F8FAFC">Twitter</text>
           </g>
 
-          <!-- Portfolio Social Button -->
-          <g transform="translate(416, 0)">
-            <rect width="134" height="34" rx="8" fill="#1E293B" fill-opacity="0.8" stroke="rgba(255,255,255,0.12)" stroke-width="1" />
-            <circle cx="28" cy="21" r="7" fill="none" stroke="#10B981" stroke-width="1.5" />
-            <line x1="21" y1="21" x2="35" y2="21" stroke="#10B981" stroke-width="1.2" />
-            <ellipse cx="28" cy="21" rx="3.5" ry="7" fill="none" stroke="#10B981" stroke-width="1.2" />
-            <text x="44" y="22" class="sans-text" font-size="12" font-weight="600" fill="#F8FAFC">Portfolio</text>
-          </g>
         </g>
       </g>
     </g>

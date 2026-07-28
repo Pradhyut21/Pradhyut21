@@ -321,14 +321,8 @@
           <text x="120" y="2" font-size="13" font-weight="600" fill="#0284C7">Ultimate Autonomous AI Agents &amp; Swarms</text>
         </g>
 
-        <!-- Item 2: Portfolio -->
+        <!-- Item 2: Email -->
         <g transform="translate(0, 32)">
-          <text x="0" y="4" font-size="13" font-weight="600" fill="#475569">🌐 Portfolio:</text>
-          <text x="120" y="4" font-size="13" font-weight="500" fill="#0F172A">pang-ai.vercel.app</text>
-        </g>
-
-        <!-- Item 3: Email -->
-        <g transform="translate(290, 32)">
           <text x="0" y="4" font-size="13" font-weight="600" fill="#475569">✉️ Email:</text>
           <text x="70" y="4" font-size="13" font-weight="500" fill="#059669">pradhyut2007@gmail.com</text>
         </g>
@@ -461,14 +455,6 @@
             <text x="42" y="22" class="sans-text" font-size="12" font-weight="600" fill="#0F172A">Twitter</text>
           </g>
 
-          <!-- Portfolio Social Button -->
-          <g transform="translate(416, 0)">
-            <rect width="134" height="34" rx="8" fill="#FFFFFF" fill-opacity="0.9" stroke="rgba(15,23,42,0.12)" stroke-width="1" filter="url(#pill-shadow-light)" />
-            <circle cx="28" cy="21" r="7" fill="none" stroke="#059669" stroke-width="1.5" />
-            <line x1="21" y1="21" x2="35" y2="21" stroke="#059669" stroke-width="1.2" />
-            <ellipse cx="28" cy="21" rx="3.5" ry="7" fill="none" stroke="#059669" stroke-width="1.2" />
-            <text x="44" y="22" class="sans-text" font-size="12" font-weight="600" fill="#0F172A">Portfolio</text>
-          </g>
         </g>
       </g>
     </g>
