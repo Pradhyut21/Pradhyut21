@@ -1,16 +1,7 @@
-<div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
-  <img alt="Pradhyut — Autonomous AI Agent Architect" src="assets/banner-dark.svg" width="100%">
-</picture>
 
-<br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=800&color=22D3EE&center=true&vCenter=true&width=750&lines=%E2%9D%AF+cooking+multi-agent+AI+systems+for+Bharat+%F0%9F%87%AE%F0%9F%87%B3;%E2%9D%AF+serial+hackathon+shipper+(4%2B+builds+and+counting)+%F0%9F%99%8C;%E2%9D%AF+RAG+%2B+LangGraph+%2B+swarms+%2B+production+code+fr+fr;%E2%9D%AF+currently+debugging+at+3am%2C+probably+%E2%98%95" alt="typing-svg" />
 
-<br/>
 
 <a href="https://github.com/Pradhyut21"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"></a>
 <a href="https://www.linkedin.com/in/pradhyut"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
