@@ -53,6 +53,10 @@ Autonomous AI Swarms · Agentic RAG · Voice-controlled AI agents · Zero sleep 
 
 ## 🚀 featured_builds // what I've cooked
 
+### ♻️ [TaulSaathi — Kannada voice receipts](https://github.com/Pradhyut21/taulsaathi)
+
+Fifteen or fifty? A misheard rate changes the receipt. TaulSaathi combines Gnani Prisma/Timbre with visible number conflicts, explicit review and confirmation tied to the current revision. [Watch the 60-second demo](https://github.com/Pradhyut21/taulsaathi/blob/main/media/TaulSaathi-demo.mp4) · [Inspect the evidence](https://github.com/Pradhyut21/taulsaathi#what-was-actually-tested). The demo uses generated Kannada speech and fictional transactions; human-speaker and user validation remain pending.
+
 <table>
 <tr>
 <td width="50%" valign="top">
