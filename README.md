@@ -116,28 +116,6 @@ Bilingual English/Kannada crime analytics platform — KSP Datathon 2026. Real-t
 </tr>
 </table>
 
-<br>
-
-## 📊 stats.exe // receipts
-
-<div align="center">
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=Pradhyut21&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0F172A&title_color=22D3EE&icon_color=10B981&text_color=F8FAFC" />
-<img height="165" src="https://github-readme-streak-stats.herokuapp.com/?user=Pradhyut21&theme=tokyonight&hide_border=true&background=0F172A&stroke=22D3EE&ring=7C3AED&fire=10B981&currStreakLabel=22D3EE" />
-</div>
-
-<div align="center">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Pradhyut21&layout=compact&theme=tokyonight&hide_border=true&bg_color=0F172A&title_color=22D3EE&text_color=F8FAFC" />
-</div>
-
-<div align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Pradhyut21&theme=tokyo-night&hide_border=true&bg_color=0F172A&color=22D3EE&line=10B981&point=A855F7" width="100%"/>
-</div>
-
-<div align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=Pradhyut21&theme=algolia&no-frame=true&column=7&margin-w=8&margin-h=8" />
-</div>
-
-<br>
 
 <!-- snake animation: rendered by .github/workflows/snake.yml -->
 <div align="center">
